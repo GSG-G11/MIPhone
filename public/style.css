@@ -264,6 +264,10 @@ nav.main-menu {
   padding-top: 60px;
   border-top: #db0000 solid 6px;
 }
+#descrept{
+  color:#FF0000;
+  font-weight: 500;
+}
 .parant-brand {
   width: 100%;
   display: flex;
@@ -272,7 +276,6 @@ nav.main-menu {
   margin-bottom: 30px;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
-
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -325,6 +328,10 @@ button.btn.btn-danger:hover {
   background: #fff;
   border: 0.5px solid #ff0000c7;
   color: #ff0000c7;
+}
+
+img.phone_img {
+  width: 80%;
 }
 /* About Us ////////////////////////////////////////////////////////////////// */
 
@@ -476,48 +483,6 @@ button.btn.btn-danger:hover {
   }
 }
 
-/* @media only screen and (min-width: 280px) and (max-width: 599px) {
-  .cart-content-right {
-      padding-bottom: 5px;
-  }
-  .megamenu>.row [class*="col-"] {
-      padding: 0px;
-  }
-  .menu-area-main .megamenu .men-cat {
-      padding: 0px 15px;
-  }
-  .menu-area-main .megamenu .women-cat {
-      padding: 0px 15px;
-  }
-  .menu-area-main .megamenu .el-cat {
-      padding: 0px 15px;
-  }
-  .mean-container .mean-nav ul li a {
-      padding: 1em 4%;
-      width: 92%;
-  }
-  .mean-container .mean-nav ul li li a {
-      width: 90%;
-      padding: 1em 5%;
-  }
-  .mean-container .sub-full.megamenu-categories ol li a {
-      padding: 5px 0px;
-      text-transform: capitalize;
-      width: 100%;
-  }
-  .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
-      width: auto;
-      border: none;
-      float: none;
-  }
-  .menu-area-main {
-      height: 290px;
-      overflow-y: auto;
-  }
-  .mean-container .mean-nav ul li a.mean-expand {
-      top: 0;
-  }
-} */
 @media (min-width: 1200px) and (max-width: 1500px) {
   .about {
     background: inherit;
@@ -680,6 +645,9 @@ button.btn.btn-danger:hover {
   }
   .carousel-inner .relative {
     top: 35%;
+  }
+  .row-header {
+    max-width: 100%;
   }
 }
 
