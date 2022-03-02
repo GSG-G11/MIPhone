@@ -1,9 +1,11 @@
+//Selectors 
 const btn = document.querySelector('input[type="submit"]');
 const search = document.querySelector('input[type="text"]');
 const topsContainer = document.querySelector('.row');
 
-
-  fetch('https://api-mobilespecs.azharimm.site/v2/top-by-interest')
+//Fetch --------------------------------------------
+//fetch phone api 
+  fetch('/api')
  .then((respo) => respo.json())
    .then((data) => {
     if (data.length === 0) {
@@ -18,6 +20,7 @@ const topsContainer = document.querySelector('.row');
         ele.textContent= result.phones[i].phone_name
     })
 
+    // fetch phone det. api 
     phoneImg.forEach((ele, i) =>{
         fetch(result.phones[i].detail)
         .then((respo) => respo.json())
@@ -42,12 +45,7 @@ const topsContainer = document.querySelector('.row');
    })
    .catch(error => console.log(error));
 
-    
-
-
-
-
-
+//Events --------------------------------------------
 search.addEventListener('keyup', (e) => {
     if (e.keyCode === 13) {
         btn.click();
@@ -59,6 +57,7 @@ btn.addEventListener('click', (e) => {
     if (searchValue === '') {
         return;
     }
+    localStorage.setItem('searchValue', searchValue);
     const url = `api/${searchValue}`;
     fetch(url)
         .then((resp) => resp.json())
@@ -68,7 +67,7 @@ btn.addEventListener('click', (e) => {
                 return;
             }
             document.querySelector(".phone-brand").textContent = result.phones[0].brand;
-            document.querySelector("span").textContent = result.phones[0].phone_name;
+            document.querySelector(".about_box span a").textContent = result.phones[0].phone_name;
             document.querySelector(".phone_img").src = result.phones[0].image;
             fetch(result.phones[0].detail)
             .then((resp) => resp.json())
@@ -85,7 +84,7 @@ btn.addEventListener('click', (e) => {
 
         })
         .catch((err) => console.log(err));
-
+        
         search.value = '';
 });
 
