@@ -441,6 +441,54 @@ button.btn.btn-danger:hover {
 .copyright a {
   color: rgb(0, 0, 0);
 }
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -15px 0;
+  /* border: solid #f8f9fa; */
+  border-width: 0.2rem 0 0;
+}
+.table-parant-div {
+    background-color: #fff0f0;
+    padding: 5px 22px;
+    margin-top: 4%;
+    border-radius: 7px;
+}
+tbody tr:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.about hr {
+  border: 0.5px solid #f00;
+  width: 23%;
+}
+th.title-td {
+  font-size: 16px;
+  color: red;
+}
+
+.bd-content-title {
+  pointer-events: auto;
+  margin-top: 3rem;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 58px;
+  color: #23242a;
+  padding-bottom: 10px;
+  display: block;
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+.table td, .table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
 
 /* Extra small devices  */
 @media (max-width: 575.98px) {
@@ -475,6 +523,9 @@ button.btn.btn-danger:hover {
     width: 1170px;
   }
 }
+
+
+
 
 /* @media only screen and (min-width: 280px) and (max-width: 599px) {
   .cart-content-right {
@@ -608,6 +659,9 @@ button.btn.btn-danger:hover {
   .main-menu ul {
     margin: 0px 15px 10px;
   }
+  .row-header {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -680,6 +734,9 @@ button.btn.btn-danger:hover {
   }
   .carousel-inner .relative {
     top: 35%;
+  }
+  .row-header {
+    max-width: 100%;
   }
 }
 
