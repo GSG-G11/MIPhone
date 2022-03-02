@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "app.js",
+    "start": "app.js",
     "test": "test src/app.js",
-    "dev" : "nodemon src/app.js"
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/GSG-G11/twittery#readme",
   "devDependencies": {
+    "@types/node-fetch": "^2.6.1",
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "supertest": "^6.2.2"
@@ -28,7 +29,6 @@
     "env2": "^2.2.2",
     "express": "^4.17.3",
     "morgan": "^1.10.0",
-    "node-fetch": "^3.2.1",
-    "twitter": "^1.7.1"
+    "node-fetch": "^2.6.7"
   }
 }
