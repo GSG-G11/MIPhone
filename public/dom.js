@@ -26,8 +26,7 @@ const topsContainer = document.querySelector('.row');
         .then((respo) => respo.json())
         .then((data) => {
             let dResult = data.data
-            ele.src = dResult.thumbnail
-            
+            ele.src = dResult.thumbnail            
         })
         .catch((err) => console.log(err))
     })
