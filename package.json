@@ -21,6 +21,7 @@
   "homepage": "https://github.com/GSG-G11/MIPhone#readme",
   "devDependencies": {
     "@types/node-fetch": "^2.6.1",
+    "eslint": "^8.10.0",
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "supertest": "^6.2.2"
@@ -30,5 +31,5 @@
     "express": "^4.17.3",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.7"
- }
+  }
 }
