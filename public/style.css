@@ -259,6 +259,28 @@ nav.main-menu {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.viewmore-btn {
+  display: flex;
+  justify-content: end;
+}
+a.view-more {
+  font-family: poppins;
+  background: #ff0000c7;
+  border: none;
+  color: #fff;
+  padding: 10px 0px;
+  width: 37%;
+  font-size: 17px;
+  margin-top: 5%;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+a.view-more:hover {
+  background: #fff;
+  border: 0.5px solid #ff0000c7;
+  color: #ff0000c7;
+}
 /* Our Brand /////////////////////////////////////////////////////////////// */
 .brand {
   padding-top: 60px;
@@ -700,6 +722,9 @@ th.title-td {
   .row-header {
     max-width: 100%;
   }
+  a.view-more {
+    width: 67%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -826,5 +851,8 @@ th.title-td {
   }
   .phone-info {
     max-width: 100%;
+  }
+  a.view-more {
+    width: 67%;
   }
 }

@@ -1,9 +1,6 @@
 const fetch = require('node-fetch');
 const serachRouter = require('express').Router();
 
-
-
-
 serachRouter.get('/', (req, res) => {
     fetch(`https://api-mobilespecs.azharimm.site/v2/top-by-interest`)
       .then((resp) => resp.json())
@@ -11,7 +8,7 @@ serachRouter.get('/', (req, res) => {
         res.send(data);
       })
       .catch((err) => res.status(400).send({error: "search result not found"}) );
-  });
+});
 
 
 

@@ -19,7 +19,6 @@ fetch(`/api/${searchedValue}`).then((resp) => resp.json())
     fetch(result.phones[0].detail)
     .then((respo) => respo.json())
       .then((data) =>{
-
         const dResult = data.data
         console.log(dResult)
         td[0].textContent = dResult.specifications[1].specs[1].val[0]
@@ -30,9 +29,6 @@ fetch(`/api/${searchedValue}`).then((resp) => resp.json())
         td[5].textContent = dResult.specifications[12].specs[1].val[0]
       })
     .catch(err => console.log(err))
-   
-
-    
 })
 .catch((error) => {console.log(error)})
 
